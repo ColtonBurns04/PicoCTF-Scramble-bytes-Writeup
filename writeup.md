@@ -206,7 +206,8 @@ random.shuffle(indices)
 decoded = bytearray([0 for i in range(len(data_updated))])  
 
 for i in range(len(data_updated)):  
- # since a port number was randomly selected in the send.py script, in order to generate the correct numbers in the same sequence, we have to do the same:  
+ '''since a port number was randomly selected in the send.py script,
+ in order to generate the correct numbers in the same sequence, we have to do the same: ''' 
 ensure_correct_scramble=random.randrange(65536) 
     decode=(int(data_updated[i],16)^random.randrange(256))  
     #map the indice to what it is in when shuffled
