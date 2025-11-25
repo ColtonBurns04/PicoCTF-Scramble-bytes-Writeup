@@ -223,6 +223,6 @@ checking what this txt is fairly clear from the console: ![[confirm.png]]
 
 converting it to a png yields the flag:
 
-![[flag.png]]
+![flag](flag.png)
 
 
