@@ -1,10 +1,10 @@
 
-Type: Forensics \\
-Difficulty: Hard\\
-Solves:1,235\\
+Type: Forensics <br>
+Difficulty: Hard<br>
+Solves:1,235<br>
 
 Description: I sent my secret flag over the wires, but the bytes got all mixed up!
-given: send.py, capture.pcap
+given: send.py, capture.pcap <br>
 
 
 Starting this challenge, I first looked at the Script which the Author used to send the packet: 
