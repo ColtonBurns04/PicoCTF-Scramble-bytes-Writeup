@@ -102,11 +102,11 @@ for pkt in cap:
             pass  
   
 print(data)   
-cap.close()```
-
+cap.close()
+```
 this outputs the following: 
 
-```
+
 ```
 packet at 1943 results in error, may be malformed
 packet at 4777 results in error, may be malformed
