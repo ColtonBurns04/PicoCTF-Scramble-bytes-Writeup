@@ -74,7 +74,7 @@ Since after looking at the python script, I know the payload of the UDP packet i
 
 this returns what I expected, every packet which has a udp payload of exactly 1 byte:
 
-![[wire.png]]
+![wire](wire.png)
 
 so, I can use pyshark to extract these payloads and put them into an array 
 
@@ -116,20 +116,20 @@ packet at 10562 results in error, may be malformed
 ```
 
 The errors are interesting, taking a look at the affected packets I see: 
-![[wireshark.png]]
+![wireshark](wireshark.png)
 
 the UDP packets still contain bytes that I need to reconstruct the, since i know the exact No. the packets were sent, I can manually add them to the array  (above has them already inserted)
 
 
 searching up what pythons time module's time() function returns yields: 
-![[time.png]]
+![time](time.png)
 
 
 Since the time was recorded when the first packet was sent, I can use the Integer version of that as my seed to reverse the scramble and xor. 
 
 looking at wireshark, the epoch time of the first packet is:  
 Epoch Arrival Time: 1614044650.913789387
-![[wireshark2.png]]
+![wireshark2](wireshark2.png)
 
 converting it to a int like in the original script, floors it so, our seed is 
 
