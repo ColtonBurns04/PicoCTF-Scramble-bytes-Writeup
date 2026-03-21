@@ -220,7 +220,7 @@ with open("scrambled.txt","wb") as f:
 print(decoded)
 ```
 
-checking what this txt is fairly clear from the console: ![[confirm.png]]
+checking what this txt is fairly clear from the console: ![confirm](confirm.png)
 
 converting it to a png yields the flag:
 
